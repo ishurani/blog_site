@@ -56,9 +56,7 @@ class PostDeleteView(LoginRequiredMixin,DeleteView):
     model = Post
     success_url = reverse_lazy('post_list')
 
-#######################################
-## Functions that require a pk match ##
-#######################################
+
 
 @login_required
 def post_publish(request, pk):
